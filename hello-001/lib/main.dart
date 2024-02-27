@@ -7,9 +7,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  @override //재정의
-  Widget build(BuildContext context) { //리턴타입이 위젯
-    return MaterialApp( "안녕하세요"
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -51,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '버튼을 클릭해 주세요:',
             ),
             Text(
-              '$_counter', //카운터가 변경되면 바뀜
+              '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
